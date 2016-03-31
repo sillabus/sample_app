@@ -13,6 +13,8 @@ test "invalid signup information" do
     }
   end
   	assert_template 'users/new'
+    assert_select 'div[id=?]', "error_explanation"
+    assert_select 'div[class=?]',"alert alert_danger"
   end
 
   test "valid signup information" do
@@ -26,5 +28,7 @@ test "invalid signup information" do
   	}
   end
   	assert_template 'users/show'
+    #assert_not flash.empty?
+    assert is_logged_in?
   end
 end
