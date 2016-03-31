@@ -24,6 +24,7 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  background-color: #AEAFC0;
 }
 
 section {
@@ -39,6 +40,18 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.btn-primary {
+  background-color: #36397A;
+  border-color: #36397A;
+  color: #827FB2;
+
+}
+
+.btn-primary:hover {
+  background-color: #36397A;
+  color:white;
 }
 
 /* typography */
@@ -60,7 +73,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #696969;
 }
 
 p {
@@ -68,14 +81,13 @@ p {
   line-height: 1.7em;
 }
 
-
 /* header */
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #827FB2;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -86,7 +98,31 @@ p {
   }
 }
 
+.jumbotron {
+  background-color: #AEAFC0;
+}
 
+.navbar {
+  background-color: #36397A;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #827FB2 !important;
+}
+
+ul.nav li a, ul.nav li a:visited:hover {
+    color: white !important;
+    background-color: #36397A;
+}
+
+.dropdown, .dropdown-menu {
+   background-color: #36397A;
+   color: #827FB2 
+}
+
+.dropdown-toggle {
+  background-color: #36397A;
+}
 /* sidebar */
 aside {
 section.user_info {
@@ -170,12 +206,13 @@ input {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  border-top: 1px solid #696969;
+  color: #696969;
   a {
-    color: $gray;
+    color: #696969;
     &:hover {
-      color: $gray-darker;
+      color: #696969;
+      text-decoration:none;
     }
   }
   small {
@@ -243,7 +280,7 @@ footer {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: white;
+    background-color: #827FB2;
     border-radius: 4px;
     position: absolute;
     transition-property: -webkit-transform;
@@ -251,6 +288,7 @@ footer {
     transition-property: transform, -webkit-transform;
     transition-duration: 0.15s;
     transition-timing-function: ease; }
+
   .hamburger-inner::before, .hamburger-inner::after {
     content: "";
     display: block; }
