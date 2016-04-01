@@ -106,23 +106,45 @@ p {
   background-color: #36397A;
 }
 
-ul.nav li a, ul.nav li a:visited {
-    color: #827FB2 !important;
+.navbar .nav > li > a {
+  color: #827FB2;
 }
 
-ul.nav li a, ul.nav li a:visited:hover {
-    color: white !important;
+.navbar .nav > li > a:hover {
+    color: white;
     background-color: #36397A;
 }
 
-.dropdown, .dropdown-menu {
-   background-color: #36397A;
-   color: #827FB2 
+div .nav > li > a:visited {
+    color: #827FB2;
+    background-color: #36397A;
 }
 
-.dropdown-toggle {
+.dropdown, .dropdown-menu > li > a {
+   background-color: #36397A;
+   color: #827FB2;
+}
+
+.dropdown, .dropdown-menu > li > a:hover{
+   background-color: #36397A;
+   color: white;
+}
+
+.dropdown-menu {
   background-color: #36397A;
 }
+
+.dropdown-toggle:hover {
+  background-color: #827FB2;
+}
+
+
+
+.dropdown-toggle:active, .open .dropdown-toggle {
+background-color: #827FB2;
+}
+
+
 /* sidebar */
 aside {
 section.user_info {
